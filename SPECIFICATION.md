@@ -1,4 +1,7 @@
-# HTP Specification v1.0
+> **Status:** Draft v1.0 | **Last Updated:** May 2026  
+> **Target Audience:** Protocol implementers, engineers, auditors  
+> **For the mission statement, see [HarmonicTruthProtocol.md](./HarmonicTruthProtocol.md)**
+> # HTP Specification v1.0
 
 ## 1. Data Format
 - TruthCertificate schema
