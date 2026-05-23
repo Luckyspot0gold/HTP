@@ -1,21 +1,58 @@
-MIT License
+Reality Protocol LLC - Harmonic Truth Protocol License
+Version 1.0 - May 2026
 
-Copyright (c) 2026 Justin McCrea
+Copyright (c) 2025-2026 Reality Protocol LLC. All Rights Reserved.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+1. GRANT OF LICENSE
+Subject to the terms and conditions of this License, Reality Protocol LLC grants you a 
+limited, non-exclusive, non-transferable, revocable license to:
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+   a. Use, copy, modify, and create derivative works of the Software for personal, 
+      internal, research, educational, or non-commercial purposes.
+   b. Distribute the Software in source or binary form for non-commercial use only, 
+      provided that the above copyright notice and this full License are included.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+2. COMMERCIAL USE AND ROYALTY OBLIGATION
+Any commercial use, resale, redistribution, integration into a commercial product/service, 
+or use in a manner intended to generate profit requires a separate Commercial License Agreement 
+with Reality Protocol LLC.
+
+Commercial use includes (but is not limited to):
+- Incorporating the Software or derivatives into paid products, platforms, or services
+- Offering the Software as part of SaaS, trading tools, accessibility solutions, or financial platforms
+- Reselling, sublicensing, or bundling the Software for monetary gain
+
+For all commercial uses, you must:
+   a. Contact Reality Protocol LLC to execute a Commercial License Agreement.
+   b. Pay royalties equal to **5% of Gross Revenue** directly attributable to the use of the 
+      Software or its derivatives (calculated quarterly).
+   c. Provide quarterly reports and allow reasonable audit rights.
+
+3. PATENT GRANT
+Subject to compliance with this License and any executed Commercial License Agreement, 
+Reality Protocol LLC grants a limited patent license under its Patent Claims (including 
+RP-2026-001 and related filings) solely to the extent necessary to use the Software as 
+provided in Section 1 (non-commercial) or under a signed Commercial Agreement.
+
+This patent grant terminates immediately if you breach any term of this License or 
+institute patent litigation against Reality Protocol LLC or the Software.
+
+4. RESTRICTIONS
+You may not:
+   - Remove or alter any copyright, patent, or trademark notices
+   - Use the Software in any way that competes directly with Reality Protocol LLC products 
+     without a Commercial Agreement
+   - Claim ownership of the original Software or patents
+
+5. TERMINATION
+This License terminates automatically upon any breach. Upon termination, you must cease 
+all use and destroy all copies of the Software.
+
+6. DISCLAIMER OF WARRANTY
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, 
+INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR 
+PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL REALITY PROTOCOL LLC BE LIABLE FOR ANY CLAIM, 
+DAMAGES OR OTHER LIABILITY.
+
+For Commercial Licensing inquiries, including custom royalty terms, support, or enterprise agreements, 
+please contact: licensing@realityprotocol.com
