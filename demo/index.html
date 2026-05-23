@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTP - Core Wallet Demo</title>
+  <style>
+    body { font-family: Arial; max-width: 800px; margin: 50px auto; }
+    button { padding: 15px 30px; margin: 10px; cursor: pointer; }
+    #wallet-info { background: #f0f0f0; padding: 20px; border-radius: 5px; }
+    .connected { color: green; }
+    .disconnected { color: red; }
+  </style>
+</head>
+<body>
+  <h1>🎵 HTP + Core Wallet Demo</h1>
+  
+  <div id="wallet-section">
+    <button id="connect-btn" onclick="connectWallet()">
+      🔗 Connect Core Wallet
+    </button>
+    <div id="wallet-info" style="display: none;">
+      <p>Status: <span id="status" class="disconnected">Disconnected</span></p>
+      <p>Address: <span id="address">-</span></p>
+      <p>Balance: <span id="balance">-</span> AVAX</p>
+      <p>Network: <span id="network">-</span></p>
+    </div>
+  </div>
+
+  <div id="htp-section" style="display: none;">
+    <h2>Access Verified Market Truth</h2>
+    <select id="asset">
+      <option value="BTC">Bitcoin</option>
+      <option value="ETH">Ethereum</option>
+    </select>
+    <button onclick="accessTruth()">
+      🔊 Hear Market (0.001 AVAX)
+    </button>
+    <div id="result"></div>
+  </div>
+
+  <script type="module">
+    import { CoreWalletIntegration } from '../src/integration/coreWallet.js';
+    
+    const wallet = new CoreWalletIntegration();
+    
+    window.connectWallet = async () => {
+      try {
+        if (!wallet.isInstalled()) {
+          alert('Please install Core Wallet from https://core.app');
+          window.open('https://core.app', '_blank');
+          return;
+        }
+        
+        const state = await wallet.connect();
+        await wallet.switchNetwork('fuji'); // or 'mainnet'
+        
+        document.getElementById('wallet-info').style.display = 'block';
+        document.getElementById('htp-section').style.display = 'block';
+        document.getElementById('connect-btn').style.display = 'none';
+        
+        document.getElementById('status').textContent = 'Connected';
+        document.getElementById('status').className = 'connected';
+        document.getElementById('address').textContent = 
+          state.address.substring(0, 6) + '...' + state.address.substring(-4);
+        document.getElementById('balance').textContent = 
+          parseFloat(state.balance).toFixed(4);
+        document.getElementById('network').textContent = 
+          state.chainId === 43113 ? 'Fuji Testnet' : 'C-Chain';
+          
+      } catch (err) {
+        alert('Connection failed: ' + err.message);
+      }
+    };
+    
+    window.accessTruth = async () => {
+      try {
+        const asset = document.getElementById('asset').value;
+        document.getElementById('result').innerHTML = 'Processing payment...';
+        
+        // x402 payment via Core Wallet
+        const txHash = await wallet.signX402Payment(
+          '0.001',
+          '0xYourContractAddress'
+        );
+        
+        document.getElementById('result').innerHTML = `
+          <p>✅ Payment confirmed!</p>
+          <p>TX: <a href="https://testnet.snowtrace.io/tx/${txHash}" target="_blank">
+            ${txHash.substring(0, 20)}...
+          </a></p>
+          <p>Loading audio...</p>
+          <audio controls>
+            <source src="/api/truth/${asset}?tx=${txHash}" type="audio/wav">
+          </audio>
+        `;
+      } catch (err) {
+        document.getElementById('result').innerHTML = 
+          '<p style="color: red;">Error: ' + err.message + '</p>';
+      }
+    };
+    
+    // Auto-refresh on account/chain change
+    wallet.onAccountChange(() => window.location.reload());
+    wallet.onChainChange(() => window.location.reload());
+  </script>
+</body>
+</html>
