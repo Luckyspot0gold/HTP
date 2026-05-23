@@ -46,6 +46,15 @@ Universal sensory delivery layer.
 - Open non-commercial use with clear commercial licensing path
 - Patent-protected core technology (RP-2026-001)
 
+- ## Avalanche Deployment
+
+| Network | Contract Address | Status |
+|---------|------------------|--------|
+| Fuji Testnet | `0x...` | ✅ Active |
+| C-Chain Mainnet | Coming after audit | 🕐 Planned |
+
+[View on SnowTrace](https://testnet.snowtrace.io/address/0x...)
+
 ## Quick Start
 
 ```bash
