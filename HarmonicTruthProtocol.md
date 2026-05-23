@@ -1,4 +1,6 @@
-# Harmonic Truth Protocol (HTP)
+> **Status:** Living Document | **Last Updated:** May 2026  
+> **Target Audience:** Advocates, regulators, investors, accessibility community  
+> **For technical details, see [SPECIFICATION.md](./SPECIFICATION.md)**# Harmonic Truth Protocol (HTP)
 
 ## The HTTP of Market Perception
 
