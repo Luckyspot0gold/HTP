@@ -1,37 +1,55 @@
-# HTP
-Harmonic Truth Protocol - Alternate perception Layer ( APL ) 
 # Harmonic Truth Protocol (HTP)
 
-> Converting verified real-world market activity into accessible harmonic and haptic signals.
+**Alternate Perception Layer (APL)**
 
-## What This Is
+> Converting cryptographically verified market data into accessible, deterministic harmonic, haptic, and multisensory signals.
 
-A protocol stack that:
-1. **Acquires** truth from multiple market sources
-2. **Verifies** consensus and integrity
-3. **Translates** market state into human-perceivable sensations
-4. **Delivers** accessible, auditable sensory output
+---
 
-## The Three Layers
+## Overview
+
+The **Harmonic Truth Protocol (HTP)** is an open infrastructure protocol that acquires verified market truth from multiple sources, validates its integrity, and translates complex economic states into human-perceivable sensory outputs (audio harmonics, haptics, and visual overlays).
+
+HTP is designed as foundational accessibility infrastructure for decentralized finance, trading platforms, and agentic economies — making high-complexity market data usable by blind, low-vision, neurodivergent, and cognitive-load-sensitive users.
+
+## The Three Core Layers
 
 ### Layer 1: Truth Acquisition
-Multi-source market data with cryptographic verification.
-- Timestamped telemetry
-- Consensus validation
-- Immutable audit trails
+Multi-source data ingestion with cryptographic consensus and provenance.
+
+- Aggregates data from independent exchanges and oracles
+- Real-time consensus validation and anomaly detection
+- Merkle-proof audit trails + on-chain verification support
+- Ed25519 signature compatibility
 
 ### Layer 2: Harmonic Translation
-Market state → Sensory representation.
-- Volatility → Frequency
-- Volume → Amplitude  
-- Momentum → Tempo
-- Divergence → Dissonance
+Deterministic mapping of market states into perceptual signals.
+
+- Volatility → Frequency & modulation
+- Momentum → Tempo & direction
+- Volume & Risk → Amplitude & dissonance
+- Network/Validator health → Haptic patterns
 
 ### Layer 3: Human Accessibility
-Universal sensory interface for blind, neurodivergent, and cognitive-load-sensitive users.
+Universal sensory delivery layer.
+
+- WCAG 2.1 / Section 508 compliant
+- Screen-reader + haptic-first interfaces
+- Hybrid visual line charts + multisensory augmentation
+- Support for Robinhood, Crypto.com, Cash App, and similar platforms via embeddable components
+
+## Key Features
+
+- **Production-ready** harmonic and haptic engines
+- **Avalanche C-Chain** integration for on-chain state verification (drives gas usage + Retro9000 eligibility)
+- **x402** payment support for verified data streams
+- Open non-commercial use with clear commercial licensing path
+- Patent-protected core technology (RP-2026-001)
 
 ## Quick Start
 
 ```bash
+git clone https://github.com/Luckyspot0gold/harmonic-truth-protocol.git
+cd harmonic-truth-protocol
 pip install -r requirements.txt
 python examples/btc_audio_stream.py
