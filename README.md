@@ -53,3 +53,11 @@ git clone https://github.com/Luckyspot0gold/harmonic-truth-protocol.git
 cd harmonic-truth-protocol
 pip install -r requirements.txt
 python examples/btc_audio_stream.py
+
+## Live Demo
+
+🎵 [Listen to Bitcoin](https://htp-demo.realityprotocol.io) - 30 seconds of verified market audio
+
+📱 [Mobile Haptic Test](https://htp-demo.realityprotocol.io/haptic) - Feel market volatility
+
+🔍 [Avalanche Explorer](https://testnet.snowtrace.io/address/0xYourContract) - On-chain verifications
