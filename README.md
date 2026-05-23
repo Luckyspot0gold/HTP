@@ -53,6 +53,22 @@ Universal sensory delivery layer.
 | Fuji Testnet | `0x...` | ✅ Active |
 | C-Chain Mainnet | Coming after audit | 🕐 Planned |
 
+## Avalanche Integration
+
+### Verified on Snowtrace
+Every HTP verification is permanently recorded on Avalanche C-Chain and viewable on Snowtrace:
+
+| Network | Contract | Explorer |
+|---------|----------|----------|
+| Fuji Testnet | `0x...` | [View on Snowtrace](https://testnet.snowtrace.io/address/0x...) |
+| C-Chain Mainnet | Coming soon | [View on Snowtrace](https://snowtrace.io/address/0x...) |
+
+### Core Wallet
+Connect with Avalanche's official wallet for seamless x402 payments:
+- 🔗 [Download Core Wallet](https://core.app)
+- 💳 Pay 0.001 AVAX per verified market state
+- 🔍 All transactions verifiable on Snowtrace
+
 [View on SnowTrace](https://testnet.snowtrace.io/address/0x...)
 
 ## Quick Start
