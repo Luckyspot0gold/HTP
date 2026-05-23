@@ -1,24 +1,25 @@
----
-
-### File 2: `SPECIFICATION.md`
-```markdown
 # HTP Specification v1.0
 
-## 1. Truth Acquisition Layer
+## 1. Data Format
+- TruthCertificate schema
+- AudioParameters schema
 
-### 1.1 Data Sources
-Minimum 3 independent sources required for consensus:
-- Primary exchanges (Coinbase, Kraken, Binance)
-- Secondary aggregators (CoinGecko, CoinMarketCap)
-- Direct feeds (where available)
+## 2. API Endpoints
+- POST /v1/truth
+- GET /v1/verify/:hash
+- WebSocket /v1/stream
 
-### 1.2 Consensus Algorithm
-```python
-valid_readings = [r for r in readings if r.error is None]
-if len(valid_readings) < ceil(len(sources) * 0.67):
-    raise ConsensusFailure("Insufficient agreement")
+## 3. Consensus Algorithm
+- 2/3 majority requirement
+- Price deviation tolerance (0.1%)
+- Merkle root calculation
 
-median_price = median(r.price for r in valid_readings)
-for r in valid_readings:
-    if abs(r.price - median_price) / median_price > 0.001:
-        raise ConsensusFailure("Price manipulation detected")
+## 4. Audio Mapping
+- Frequency range: 200-800 Hz
+- Modulation: ±50 Hz
+- Tempo: 60-180 BPM
+
+## 5. Avalanche Integration
+- Contract address format
+- Event emission schema
+- Gas costs
